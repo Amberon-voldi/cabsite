@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import HeroSelection from '../components/HeroSelection';
 
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 import Sidebar from '../components/Sidebar';
 import InfoSelection from '../components/InfoSelection';
-import { homeObjOne, homeObjSecond } from '../components/InfoSelection/Data';
+import { homeObjOne } from '../components/InfoSelection/Data';
 import Services from '../components/services';
 import Testimonial from '../components/Testimonial';
 

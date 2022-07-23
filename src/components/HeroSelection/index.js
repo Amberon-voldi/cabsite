@@ -1,17 +1,14 @@
 import React, {useState} from 'react'
-import { ArrowForward, ArrowRight, HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper } from './HeroElements';
+import {  HeroContainer, HeroBg, VideoBg } from './HeroElements';
 import Video from '../../videos/video.mp4';
-import {Button} from '../ButtonElements';
+
 import styled from "styled-components";
-import { FaArrowRight } from 'react-icons/fa';
+
 
 const HeroSelection = () => {
 
-    const [hover, setHover] = useState(false);
-    const onHover = () =>{
-        setHover(!hover);
-    };
-
+ 
+   
     return (
         <HeroContainer>
             <HeroBg>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import service1 from "../images/service1.png";
-import service2 from "../images/service2.png";
+
 import service3 from "../images/service3.png";
 import service4 from "../images/service4.png";
 
