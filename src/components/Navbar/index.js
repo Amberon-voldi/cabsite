@@ -20,7 +20,19 @@ export default function Navbar({toggle, isOpen}) {
                     <NavLinks to='about'>Popular Outstation Routes</NavLinks>
                 </NavItem>
                 <NavItem>
+                    <NavLinks>|</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to='about'>FAQs</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks>|</NavLinks>
+                </NavItem>
+                <NavItem>
                     <NavLinks to='about'>About</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks>|</NavLinks>
                 </NavItem>
                 <NavItem>
                     <NavLinks to='contact'>Contact Us</NavLinks>

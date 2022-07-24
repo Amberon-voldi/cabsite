@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 import HeroSelection from '../components/HeroSelection';
 
 import Navbar from '../components/Navbar';
-
 import Sidebar from '../components/Sidebar';
-import InfoSelection from '../components/InfoSelection';
-import { homeObjOne } from '../components/InfoSelection/Data';
 import Services from '../components/services';
-import Testimonial from '../components/Testimonial';
+
+import InfoText from '../components/IntroText';
+import Footer from '../components/Footer';
+
 
 
 function Home() {
@@ -22,9 +22,10 @@ function Home() {
      <Navbar toggle={toggle} isOpen={isOpen}/>
 
      <HeroSelection />
+   <InfoText />
      <Services />
-     <InfoSelection {...homeObjOne}/>
-     <Testimonial />
+   
+     <Footer />
      
      
      

@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   top: 0;
-  z-index: 0;
+  z-index: 100;
   position: sticky;
 
   @media screen and (min-width: 860px) {
@@ -74,8 +74,10 @@ export const NavLogo = styled(LinkR)`
   `
 
   export const NavItem = styled.li`
-  height: 80px
-  `
+  height: 80px;
+ 
+  font-size: 0.9rem
+  `;
 
   export const NavLinks = styled(LinkS)`
   color: #fff;
@@ -84,8 +86,13 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+ 
   cursor: pointer;
-  
+  &:hover {
+    color: #FFCA26;
+   
+    transition: 0.2s ease-in-out;
+    }
 
   &.active {
     border-buttom: 3px solid #01bf71;
