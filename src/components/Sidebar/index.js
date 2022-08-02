@@ -15,11 +15,12 @@ export default function Sidebar({isOpen, toggle}) {
                 <SidebarLink to = 'contact' onClick={toggle}>Contact Us</SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SideBarRoute to ='/signin'>
+                <SideBarRoute to ='/contact'>
                     Book Now
                 </SideBarRoute>
             </SideBtnWrap>
             </SidebarWrapper>  
     </SidebarContainer>
+   
   )
 }

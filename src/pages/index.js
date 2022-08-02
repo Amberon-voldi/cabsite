@@ -7,6 +7,7 @@ import Services from '../components/services';
 
 import InfoText from '../components/IntroText';
 import Footer from '../components/Footer';
+import FAQDropDown from '../components/DropDown_FAQ';
 
 
 
@@ -24,6 +25,7 @@ function Home() {
      <HeroSelection />
    <InfoText />
      <Services />
+     <FAQDropDown />
    
      <Footer />
      

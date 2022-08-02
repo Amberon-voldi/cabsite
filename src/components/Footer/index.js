@@ -18,7 +18,7 @@ export default function Footer() {
       title: "Contact us",
       links: [
         "+91 9717163700",
-        "travelingcabservice@gmail.com",
+        "support@cabyatri.com",
        
       ],
     },
