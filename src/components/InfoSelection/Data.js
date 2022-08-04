@@ -1,18 +1,18 @@
 export const homeObjOne = {
     id: 'info1',
-    lightBg: true,
-    lightText: false,
+    lightBg: false,
+    lightText: true,
     lightTextDesc: true,
     topLine: 'Best Prices',
     headline: 'Get a carefree and smooth riding experience with us.',
     description: 'Book cabs at an affordable price for your trip with us, providing the best price just for you.',
     buttonLabel: 'Book Now',
     imgStart: false,
-    img: require('../../images/svg-1.png'),
+    img: require('../../images/car.png'),
     alt:'Car',
     dark: true,
-    primary: false,
-    darkText: true
+    primary: true,
+    darkText: false
 }
 
 export const homeObjSecond = {

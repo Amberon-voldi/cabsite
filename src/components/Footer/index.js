@@ -60,9 +60,9 @@ export default function Footer() {
 }
 
 const Footr = styled.footer`
-  border-top: 0.02rem solid var(--primary-color);
   background-color: black;
  color: white;
+ 
  padding-bottom: 10px;
   .upper__footer {
     margin: 0 5rem;
@@ -122,7 +122,7 @@ const Footr = styled.footer`
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-    margin: 2rem 1rem;
+    
     .upper__footer {
       margin: 2rem 1rem;
       display: flex;

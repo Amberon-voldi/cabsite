@@ -26,42 +26,20 @@ const HeroSelection = () => {
         <div className="search">
           <div className="container">
             <label htmlFor=""> Enter Pick UP</label>
-            <select>
-                <option>Select</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-              </select>
-            
+            <input type="text" placeholder='Location...'/>
           </div>
           <div className="container">
             <label htmlFor="">Enter Drop</label>
-            <select>
-                <option>Select</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-                <option>Arab Egypt</option>
-                <option>Udaipur India</option>
-              </select>
+            
+           <input type="text" placeholder='Location...'/>
           </div>
           <div className="container">
-            <label htmlFor="">Start Date</label>
+            <label htmlFor="">Date</label>
             <input type="date" />
           </div>
           <div className="container">
-            <label htmlFor="">End Date</label>
-            <input type="date" />
+            <label htmlFor="">Time</label>
+            <input type="time" />
           </div>
           <button>SEARCH</button>
         </div>

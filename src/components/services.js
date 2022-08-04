@@ -26,6 +26,7 @@ export default function Services() {
       subTitle:
         "Find the best hotels and places to visit near you in a single click.",
     },
+    
   ];
   return (
     <Section id="services">

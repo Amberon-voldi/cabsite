@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const InfoContainer= styled.div`
+margin-bottom: 5rem;
+
  color: #fff;
  background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
@@ -10,15 +12,19 @@ export const InfoContainer= styled.div`
 `;
 
 export const InfoWrapper = styled.div`
+
  display: grid;
  z-index: 1;
- height: 860px;
+ height: 500px;
  width: 100%;
  max-width: 1100px;
  margin-right: auto;
  margin-left: auto;
  padding: 0 24px;
  justify-content: center;
+ @media screen and (max-width: 768px) {
+    height: 760px;
+}
 `;
 
 export const InfoRow = styled.div`

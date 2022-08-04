@@ -1,14 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import {Icon, CloseIcon} from "./Sidebar/SidebarElements"
 
 function FAQDropDown() {
     return (
-<Section>
-<div className="container">
-How can i cancel my booking?
-</div>
+        
+        <Section>
+            
+            <div className="container">
+            <Icon>
+            <CloseIcon />
+        </Icon>
+                <div className="MenuWrap">Jsksjfjnj</div>
+            </div>
 
-</Section>
+        </Section>
     )
 
 }
@@ -17,27 +23,32 @@ export default FAQDropDown
 
 
 const Section = styled.section`
-  
-width: 100%;
+  height: 50px;
+
 
 
 .container{
-    background-color: white;
- display: flex;
- margin-left: 3rem;
-  
-  color:black;
-  justify-content: start;
+    width: 100%;
+height: 90%;
+
+display: flex;
+justify-content: center;
 
 
-
- 
-
-    border-radius: 10px;
+.MenuWrap{
+    
+    background-color: antiquewhite;
+    width:80%;
+    height:90%;
+    align-items: center;
+padding-left: 10px;
+    display: flex;
+    border-radius: 5px;
+}
 }
 
 
     
   
 
-`;
+`
