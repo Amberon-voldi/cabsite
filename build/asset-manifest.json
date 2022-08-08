@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84e96dc4.css",
+    "main.js": "/static/js/main.fbad79b3.js",
+    "static/media/video.mp4": "/static/media/video.33607267e7419b0b2f73.mp4",
+    "static/media/calltaxi.png": "/static/media/calltaxi.a043724cc49fe32eb6c7.png",
+    "static/media/screens.png": "/static/media/screens.05625293ba0337d04ee3.png",
+    "static/media/haridwar.jpg": "/static/media/haridwar.c9b50047aa9d2ff9f640.jpg",
+    "static/media/lighthouse.png": "/static/media/lighthouse.2a73c491e911290f7a04.png",
+    "static/media/manali.jpg": "/static/media/manali.dd8aaa8615e67e280e6d.jpg",
+    "static/media/car.png": "/static/media/car.57155c447b4a08127b41.png",
+    "static/media/agra.jpg": "/static/media/agra.5f1287c04afe7df192d7.jpg",
+    "static/media/l1.png": "/static/media/l1.d033602133ecba7683b1.png",
+    "index.html": "/index.html",
+    "main.84e96dc4.css.map": "/static/css/main.84e96dc4.css.map",
+    "main.fbad79b3.js.map": "/static/js/main.fbad79b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84e96dc4.css",
+    "static/js/main.fbad79b3.js"
+  ]
+}
