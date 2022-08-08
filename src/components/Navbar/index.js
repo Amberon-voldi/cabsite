@@ -17,8 +17,8 @@ export default function Navbar({toggle, isOpen}) {
                 <FaBars/>
             </MobileIcon>
             <NavMenu>
-                <NavItem>
-                    <NavLinks to='/routes'>Popular Outstation Routes</NavLinks>
+            <NavItem>
+                    <NavLinks to='/apps'>Download App</NavLinks>
                 </NavItem>
            
                 <NavItem>

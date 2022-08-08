@@ -27,9 +27,9 @@ export default function Footer() {
     <Footr>
       <div className="upper__footer">
         <div className="brand">
-         
+         <h1>CabYatri</h1>
           <p>
-          We offer Rental Cab service all over india for outstation one way and round trip Car Rental service for intercity travel. Outstation Rental Car in Bareilly all type of car are available.
+          CabYatri if your Partner for Outstation Rental, Taxi Service, Tourism and Transportation all over India.
           </p>
           
         </div>

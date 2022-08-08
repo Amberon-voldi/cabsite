@@ -16,16 +16,17 @@ export const homeObjOne = {
 }
 
 export const homeObjSecond = {
+    isbutton: false,
     id: 'info1',
     lightBg: true,
     lightText: false,
     lightTextDesc: true,
-    topLine: 'Payment',
-    headline: 'Pay securely with online payment methods.',
-    description: 'Pay in any mode of your choice while booking',
+    topLine: 'CabYatri',
+    headline: 'Your travel partner',
+    description: 'All India Cab Booking Service at reasonable prices',
     buttonLabel: 'Learn More',
     imgStart: true,
-    img: require('../../images/svg-2.png'),
+    img: require('../../images/calltaxi.png'),
     alt:'payment',
     dark: false,
     primary: false,

@@ -4,6 +4,7 @@ import {Link as LinkR } from "react-scroll";
 
 export const Button = styled(LinkR)`
   border-radius: 0.2rem;
+ 
   background: ${({primary}) => (primary ? '#FFC433' : '#010606')};
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 24px' : '12px 30px')};
@@ -13,7 +14,7 @@ export const Button = styled(LinkR)`
   border: none;
   width: 50%;
   cursor: pointer;
-  display: flex;
+  display: ${({primary}) => (primary ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;

@@ -3,17 +3,17 @@ import styled from "styled-components";
 
 
 
-export default function InfoText() {
+export default function InfoText({title, dis}) {
   return (
     <Section id="blog">
       <div className="title">
-        <h1>All India Taxi Service At Best Prices</h1>
+        <h1>{title}</h1>
       </div>
 
 
 
       <Pra>
-        We offer Rental Cab service all over india for outstation one way and round trip Car Rental service for intercity travel. Outstation Rental Car in Bareilly all type of car are available.
+      {dis}
       </Pra>
 
 
@@ -23,21 +23,37 @@ export default function InfoText() {
 }
 
 const Pra = styled.p`
- margin-top: 2rem;
+ 
+  opacity: 0.6;
+  text-align: start;
+  margin-left:4rem;
+   font-size: 1rem;
+   
+
+
+   @media screen and (min-width: 280px) and (max-width: 1080px) {
   
-  text-align: center;
-   font-size: 1.1rem;
-   line-height: 2rem;
+    margin-left:0;
+  }
+ 
+
 
 `
 
 const Section = styled.section`
    padding: 2rem;
-   margin-top: 2rem;
+
   .title {
     margin-top: 2rem;
+    margin-left:4rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    .h1 {
+     
+        text-align: start;
+        font-size: 1.5rem;
+        width: 80%;
+      }
    
   }
   
@@ -45,22 +61,20 @@ const Section = styled.section`
    
 
       
-      .title {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-      }
+      
        
       
    
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-    margin-top: 5rem;
+  
     .title {
+      margin-left:0;
+      margin-top: 2rem;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       h1 {
-        text-align: center;
+       
+        text-align: start;
         font-size: 1.5rem;
         width: 80%;
       }

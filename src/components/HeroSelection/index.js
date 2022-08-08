@@ -1,12 +1,35 @@
 import React from 'react'
 import {  HeroContainer, HeroBg, VideoBg } from './HeroElements';
 import Video from '../../videos/video.mp4';
-
+import PlacesAutocomplete, {
+  geocodeByAddress,
+  getLatLng
+} from "react-places-autocomplete";
 import styled from "styled-components";
 
 
 const HeroSelection = () => {
+  const [pickupaddress, setpickupAddress] = React.useState("");
+  const [dropaddress, setdropAddress] = React.useState("");
+  const [coordinates, setCoordinates] = React.useState({
+    lat: null,
+    lng: null
+  });
 
+  const handleSelectpickup = async value => {
+    const results = await geocodeByAddress(value);
+    const latLng = await getLatLng(results[0]);
+    setpickupAddress(value);
+
+    setCoordinates(latLng);
+  };
+  const handleSelectdrop = async value => {
+    const results = await geocodeByAddress(value);
+    const latLng = await getLatLng(results[0]);
+    setdropAddress(value);
+
+    setCoordinates(latLng);
+  };
  
    
     return (
@@ -26,12 +49,69 @@ const HeroSelection = () => {
         <div className="search">
           <div className="container">
             <label htmlFor=""> Enter Pick UP</label>
-            <input type="text" placeholder='Location...'/>
+            <PlacesAutocomplete
+        value={pickupaddress}
+        onChange={setpickupAddress}
+        onSelect={handleSelectpickup}
+      >
+        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+          <div>
+           
+
+            <input {...getInputProps({ placeholder: "Type address" })} />
+
+            <div>
+              {loading ? <div>...loading</div> : null}
+
+              {suggestions.map(suggestion => {
+                const style = {
+                  backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                };
+
+                return (
+                  <div {...getSuggestionItemProps(suggestion, { style })}>
+                    {suggestion.description}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </PlacesAutocomplete>
+           
           </div>
           <div className="container">
             <label htmlFor="">Enter Drop</label>
             
-           <input type="text" placeholder='Location...'/>
+            <PlacesAutocomplete
+        value={dropaddress}
+        onChange={setdropAddress}
+        onSelect={handleSelectdrop}
+      >
+        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+          <div>
+           ${coordinates}
+
+            <input {...getInputProps({ placeholder: "Type address" })} />
+
+            <div>
+              {loading ? <div>...loading</div> : null}
+
+              {suggestions.map(suggestion => {
+                const style = {
+                  backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                };
+
+                return (
+                  <div {...getSuggestionItemProps(suggestion, { style })}>
+                    {suggestion.description}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </PlacesAutocomplete>
           </div>
           <div className="container">
             <label htmlFor="">Date</label>
@@ -98,6 +178,7 @@ const Section = styled.section`
       border-radius: 0.5rem;
       .container {
         display: flex;
+    
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -110,10 +191,17 @@ const Section = styled.section`
         input {
           background-color: transparent;
           border: none;
+          border-bottom: 1px solid #FFCA26;
+ 
           text-align: center;
           color: black;
           &[type="date"] {
             padding-left: 3rem;
+            border: none;
+          }
+          &[type="time"] {
+      
+            border: none;
           }
           &::placeholder {
             color: black;

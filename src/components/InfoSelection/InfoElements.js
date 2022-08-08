@@ -15,7 +15,7 @@ export const InfoWrapper = styled.div`
 
  display: grid;
  z-index: 1;
- height: 500px;
+ height: ${({isbutton}) => (isbutton ? '300px' : '500px')};
  width: 100%;
  max-width: 1100px;
  margin-right: auto;
