@@ -9,27 +9,27 @@ import styled from "styled-components";
 
 
 const HeroSelection = () => {
-  const [pickupaddress, setpickupAddress] = React.useState("");
-  const [dropaddress, setdropAddress] = React.useState("");
-  const [coordinates, setCoordinates] = React.useState({
-    lat: null,
-    lng: null
-  });
+  // const [pickupaddress, setpickupAddress] = React.useState("");
+  // const [dropaddress, setdropAddress] = React.useState("");
+  // const [coordinates, setCoordinates] = React.useState({
+  //   lat: null,
+  //   lng: null
+  // });
 
-  const handleSelectpickup = async value => {
-    const results = await geocodeByAddress(value);
-    const latLng = await getLatLng(results[0]);
-    setpickupAddress(value);
+  // const handleSelectpickup = async value => {
+  //   const results = await geocodeByAddress(value);
+  //   const latLng = await getLatLng(results[0]);
+  //   setpickupAddress(value);
 
-    setCoordinates(latLng);
-  };
-  const handleSelectdrop = async value => {
-    const results = await geocodeByAddress(value);
-    const latLng = await getLatLng(results[0]);
-    setdropAddress(value);
+  //   setCoordinates(latLng);
+  // };
+  // const handleSelectdrop = async value => {
+  //   const results = await geocodeByAddress(value);
+  //   const latLng = await getLatLng(results[0]);
+  //   setdropAddress(value);
 
-    setCoordinates(latLng);
-  };
+  //   setCoordinates(latLng);
+  // };
  
    
     return (
@@ -49,7 +49,7 @@ const HeroSelection = () => {
         <div className="search">
           <div className="container">
             <label htmlFor=""> Enter Pick UP</label>
-            <PlacesAutocomplete
+            {/* <PlacesAutocomplete
         value={pickupaddress}
         onChange={setpickupAddress}
         onSelect={handleSelectpickup}
@@ -77,13 +77,13 @@ const HeroSelection = () => {
             </div>
           </div>
         )}
-      </PlacesAutocomplete>
+      </PlacesAutocomplete> */}
            
           </div>
           <div className="container">
             <label htmlFor="">Enter Drop</label>
             
-            <PlacesAutocomplete
+            {/* <PlacesAutocomplete
         value={dropaddress}
         onChange={setdropAddress}
         onSelect={handleSelectdrop}
@@ -111,7 +111,7 @@ const HeroSelection = () => {
             </div>
           </div>
         )}
-      </PlacesAutocomplete>
+      </PlacesAutocomplete> */}
           </div>
           <div className="container">
             <label htmlFor="">Date</label>
