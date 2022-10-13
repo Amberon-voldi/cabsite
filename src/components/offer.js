@@ -6,7 +6,7 @@ import { BsHeadphones, BsPerson } from "react-icons/bs";
 export default function Offer() {
   const data = [
     {
-      text: "Best Travel Guide Always for your Services",
+      text: "Best Cabs Always for your Services",
       icon: <BsPerson />,
       color: "red",
     },
@@ -28,7 +28,7 @@ export default function Offer() {
       </div>
       <div className="content">
         <div className="title">
-          <h1>We are Offering in Total 793 Tours Across the World</h1>
+          <h1>We are Offering Cabs Across the India</h1>
         </div>
         <ul className="list">
           {data.map(({ text, icon, color }) => {

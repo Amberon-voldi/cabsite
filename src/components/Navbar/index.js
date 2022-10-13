@@ -2,7 +2,8 @@ import React from 'react'
 
 import {FaBars} from 'react-icons/fa'
 
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu } from './NavbarElements';
+
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavLinks, NavMenu, LogoImg } from './NavbarElements';
 
 
 export default function Navbar({toggle, isOpen}) {
@@ -11,15 +12,15 @@ export default function Navbar({toggle, isOpen}) {
     <Nav>
         <NavbarContainer isOpen={isOpen}>
             <NavLogo to='/'>
-                CabYatri
+            <LogoImg src='https://cdn.discordapp.com/attachments/919582268631162883/1009876301689147402/Untitled_design.png' alt="logo_image"/>
             </NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars/>
             </MobileIcon>
             <NavMenu>
-            <NavItem>
+            {/* <NavItem>
                     <NavLinks to='/apps'>Download App</NavLinks>
-                </NavItem>
+                </NavItem> */}
            
                 <NavItem>
                     <NavLinks to='/faqs'>FAQs</NavLinks>
@@ -38,3 +39,6 @@ export default function Navbar({toggle, isOpen}) {
     </>
     )
 }
+
+
+

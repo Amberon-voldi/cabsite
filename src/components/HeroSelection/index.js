@@ -1,11 +1,12 @@
 import React from 'react'
 import {  HeroContainer, HeroBg, VideoBg } from './HeroElements';
 import Video from '../../videos/video.mp4';
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng
-} from "react-places-autocomplete";
+// import PlacesAutocomplete, {
+//   geocodeByAddress,
+//   getLatLng
+// } from "react-places-autocomplete";
 import styled from "styled-components";
+import ContactUs from '../BookingForm';
 
 
 const HeroSelection = () => {
@@ -47,81 +48,7 @@ const HeroSelection = () => {
           </p>
         </div>
         <div className="search">
-          <div className="container">
-            <label htmlFor=""> Enter Pick UP</label>
-            {/* <PlacesAutocomplete
-        value={pickupaddress}
-        onChange={setpickupAddress}
-        onSelect={handleSelectpickup}
-      >
-        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-          <div>
-           
-
-            <input {...getInputProps({ placeholder: "Type address" })} />
-
-            <div>
-              {loading ? <div>...loading</div> : null}
-
-              {suggestions.map(suggestion => {
-                const style = {
-                  backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
-                };
-
-                return (
-                  <div {...getSuggestionItemProps(suggestion, { style })}>
-                    {suggestion.description}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-      </PlacesAutocomplete> */}
-           
-          </div>
-          <div className="container">
-            <label htmlFor="">Enter Drop</label>
-            
-            {/* <PlacesAutocomplete
-        value={dropaddress}
-        onChange={setdropAddress}
-        onSelect={handleSelectdrop}
-      >
-        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-          <div>
-           ${coordinates}
-
-            <input {...getInputProps({ placeholder: "Type address" })} />
-
-            <div>
-              {loading ? <div>...loading</div> : null}
-
-              {suggestions.map(suggestion => {
-                const style = {
-                  backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
-                };
-
-                return (
-                  <div {...getSuggestionItemProps(suggestion, { style })}>
-                    {suggestion.description}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-      </PlacesAutocomplete> */}
-          </div>
-          <div className="container">
-            <label htmlFor="">Date</label>
-            <input type="date" />
-          </div>
-          <div className="container">
-            <label htmlFor="">Time</label>
-            <input type="time" />
-          </div>
-          <button>SEARCH</button>
+          <ContactUs />
         </div>
       </div>
     </Section>

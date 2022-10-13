@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkR} from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
 
 
 export const Nav = styled.nav`
@@ -20,30 +20,34 @@ export const Nav = styled.nav`
   `
 export const NavbarContainer = styled.div`
   display: flex;
-  position: fixed;
+  position: absolute;
   
   height: 80px;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-  opacity: ${({isOpen}) => (isOpen ? '0' : '100%') };
+  opacity: ${({ isOpen }) => (isOpen ? '0' : '100%')};
   `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  
   display: flex;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   margin-left: 1px;
   align-items: center;
-  font-weight: bold;
-  text-decoration: none;
+  
+  
   `
+export const LogoImg = styled.img`
+   height: 60px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+        width: 110px;`;
 
-  export const MobileIcon = styled.div`
+export const MobileIcon = styled.div`
   display: none;
   
   @media screen and (max-width: 768px) {
@@ -60,7 +64,7 @@ export const NavLogo = styled(LinkR)`
   }
   `
 
-  export const NavMenu = styled.ul`
+export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
@@ -73,13 +77,13 @@ export const NavLogo = styled(LinkR)`
   }
   `
 
-  export const NavItem = styled.li`
+export const NavItem = styled.li`
   height: 80px;
  
   font-size: 0.9rem;
   `;
 
-  export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkR)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -100,4 +104,3 @@ export const NavLogo = styled(LinkR)`
   
   `
 
-  

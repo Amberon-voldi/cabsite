@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../ButtonElements'
-import {Heading, SubTitle, BtnWrap, ImgWrap, Img, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, } from '../InfoSelection/InfoElements'
+
+import {Heading, SubTitle, ImgWrap, Img, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, } from '../InfoSelection/InfoElements'
 
 function InfoSelection({isbutton, id, lightBg, topLine, imgStart, lightText, description, darkText, img,headline,buttonLabel, alt, primary, dark}) {
     return (
@@ -12,9 +12,9 @@ function InfoSelection({isbutton, id, lightBg, topLine, imgStart, lightText, des
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <SubTitle darkText={darkText}>{description}</SubTitle>
-                            <BtnWrap>
+                            {/* <BtnWrap>
                                 <Button to='home' primary ={primary} dark={dark} isbutton={isbutton}>{buttonLabel}</Button>
-                            </BtnWrap>
+                            </BtnWrap> */}
                         </TextWrapper>
                     </Column1>
                     <Column2>

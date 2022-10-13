@@ -3,7 +3,7 @@ import styled from "styled-components";
 import agra from "../images/agra.jpg";
 import manali from "../images/manali.jpg";
 import haridwar from "../images/haridwar.jpg";
-import Button from "./Button";
+
 export default function Destinations() {
   const data = [
     {
@@ -29,7 +29,7 @@ export default function Destinations() {
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout from it.
         </p>
-        <Button text="Discover More" />
+        {/* <Button text="Discover More" /> */}
       </div>
 
       <div className="destinations">

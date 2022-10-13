@@ -10,7 +10,7 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-height: 500px;
+height: 600px;
   background: #fff;
 `;
 
@@ -82,23 +82,16 @@ const Accordion = () => {
   const Data = [
     {
       question: 'What is CabYatri?',
-      answer: 'www.ahataxis.com is an online car rental booking portal for outstation travels. What makes us unique is our concept of “Go One Way, Pay One Way” i.e. if you are travelling one way, you need to pay only for one way travel and not for the return trip.'
+      answer: 'www.cabyatri.com is an online car rental booking portal for outstation travels. What makes us unique is our concept of “Go One Way, Pay One Way” i.e.'
     },
     {
-      question: 'What do you call a funny mountain?',
-      answer: 'Hill-arious.'
+      question: 'Why should you book from CabYatri?',
+      answer: 'Because we are online, work 24x7, in 4000+ Cities and offer variety of Outstation taxi option for travelers.'
     }, {
-    question: 'What is CabYatri?',
-    answer: 'www.ahataxis.com is an online car rental booking portal for outstation travels. What makes us unique is our concept of “Go One Way, Pay One Way” i.e. if you are travelling one way, you need to pay only for one way travel and not for the return trip.'
+    question: 'What are our place of operations?',
+    answer: 'We are currently offering our services in more than 200+ cities across India, From Noide to Shimla and Manali'
   },
-  {
-    question: 'What do you call a funny mountain?',
-    answer: 'Hill-arious.'
-  },
-  {
-    question: 'What did the astronaut say when he crashed into the moon?',
-    answer: 'I Apollo-gize.'
-  }]
+]
 
 
 
